@@ -26,6 +26,7 @@ if (isNotProduction) {
 ```js
 // process.env.NODE_ENV == 'production'
 import isNotProduction from 'is-not-production';
+import isNotProductionNow from 'is-not-production/now';
 
 console.log(isNotProduction); // false
 
