@@ -1,7 +1,7 @@
 {
   "name": "is-not-production",
-  "version": "0.9.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "is-not-production ==",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +13,16 @@
     "mocha": "^3.5.0"
   },
   "peerDependencies": {},
-  "dependencies": {}
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morulus/is-not-production.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morulus/is-not-production/issues"
+  },
+  "homepage": "https://github.com/morulus/is-not-production#readme"
 }
