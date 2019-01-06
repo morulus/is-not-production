@@ -1,11 +1,12 @@
 {
   "name": "is-not-production",
-  "version": "0.9.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Ensure that NODE_ENV is not 'production'",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "files": ["runtime.js", "now.js"],
   "keywords": [],
   "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
   "license": "MIT",

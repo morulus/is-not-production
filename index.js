@@ -1,5 +1,5 @@
-const isNotProductionNow = require('./now.js');
+const isNotProductionRuntime = require('./runtime.js');
 
-var isNotProduction = isNotProductionNow();
+var isNotProduction = isNotProductionRuntime();
 
 module.exports = isNotProduction;

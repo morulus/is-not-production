@@ -1,7 +1,9 @@
 is-not-production
 ==
 
-Detect if you are NOT in the *production* mode of the nodejs
+Detect if you are NOT in the *production* mode of the nodejs.
+
+Simply, it checks `process.env.NODE_ENV !== 'production'`.
 
 Install
 ----
@@ -21,18 +23,18 @@ if (isNotProduction) {
 }
 ```
 
-`isNotProduction` is a constant, defined at the moment of script initialize. Typically, the value of NODE_ENV does not change through runtime. But still if you want to be sure, use `isNotProductionNow()` fn to get `isNotProduction` state at the current moment.
+`isNotProduction` is a constant, defined at the moment of script initialize. Typically, the value of NODE_ENV does not change through runtime. But still if you want to be sure, use `isNotProductionRuntime()` fn to get `isNotProduction` state at the current moment.
 
 ```js
 // process.env.NODE_ENV == 'production'
 import isNotProduction from 'is-not-production';
-import isNotProductionNow from 'is-not-production/now';
+import isNotProductionRuntime from 'is-not-production/runtime';
 
 console.log(isNotProduction); // false
 
 process.env.NODE_ENV == 'development';
 console.log(isNotProduction); // false
-console.log(isNotProductionNow()); // true
+console.log(isNotProductionRuntime()); // true
 ```
 
 Author
